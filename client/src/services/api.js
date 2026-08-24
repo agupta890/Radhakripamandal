@@ -1,7 +1,14 @@
 import axios from 'axios';
 
+// Use VITE_API_URL from environment or default to production Render backend
+const baseURL = import.meta.env.VITE_API_URL || 'https://radhakripamandal.onrender.com/api';
+
 const API = axios.create({
+<<<<<<< HEAD
   baseURL: 'https://radhakripamandal.onrender.com/api',
+=======
+  baseURL,
+>>>>>>> 432a08c665927c6ebd916398402dc804767d156f
   headers: {
     'Content-Type': 'application/json',
   },
